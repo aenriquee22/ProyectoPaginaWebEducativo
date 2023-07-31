@@ -1,0 +1,255 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body {
+  font-family: 'Space Mono', monospace;
+background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  color: white;
+}
+
+.concepto {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.cuadrado {
+  display: block;
+  background: #009FE1;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 50px 20%;
+  transition: 2s ease;
+}
+
+.cuadrado:hover {
+  transform: translateX(40vw);
+}
+
+.columnas {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 100px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-radius: 15px;
+}
+
+.alinear-izq {
+  padding: 10%;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 40%;
+}
+
+input {
+ width: 25%;
+ display: inline-block;
+ margin: 10px 20px;
+}
+
+.boton {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .4);
+  box-shadow: 4px 4px rgba(0, 0, 0, .2);
+  transition: .2s ease-in;
+  background: orange;
+}
+
+.boton:hover {
+  cursor: pointer; 
+}
+
+.boton:active {
+  transform: scale(1.1);
+}
+
+.resultado {
+  display: inline-block;
+  margin-left: 20px;
+  width: 25%;
+  height: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+    .d{
+      color: white;
+       font-weight: bold;
+    }
+
+    .top-bar {
+      width: 100%;
+      height: 2.6cm;
+      background-color: #F39C12;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos para el logo */
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
+    }
+
+    /* Estilos para el título con animación */
+    .title {
+      animation: fade 2s infinite;
+      margin-left: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #F39C12;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #EE0D8B;
+    }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidades de Medida</title>
+</head>
+<body>
+  <div class="top-bar">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1 class="title">The Universe Of The Physics</h1>
+    </div>
+
+
+  <div class="contenedor">
+  <h1>Unidades de Medida</h1>
+  <h3>Definición</h3>
+  <p class="concepto">
+    <strong>Se llama unidad de medida a una referencia convencional que se usa para medir la magnitud física de un determinado objeto, sustancia o fenómeno.
+Esta referencia se establece fijando por convención una cantidad estándar, la cual permite calcular las dimensiones de la materia.
+
+Las unidades de medida permiten calcular o medir asuntos como la longitud, la masa, la capacidad, la superficie, el volumen, la temperatura, el tiempo, la intensidad eléctrica o la intensidad luminosa.
+Las unidades de medida se han usado desde tiempos remotos. Por esta razón, han ido variando con el tiempo, en función no solo de las necesidades humanas sino de la tecnología disponible. Esto implica que han existido, y aún existen, diversos sistemas de unidades de medida.
+</strong></p>
+
+
+
+    <!-- Primeras tres columnas -->
+    <div class="columnas">
+      <div class="columna-1">
+        <h3>Magnitudes</h3>
+        <p class="concepto">
+         En Física, se llaman magnitudes a aquellas propiedades que pueden medirse y expresar su resultado mediante un número y una unidad. Son magnitudes las longitud, la masa, el volumen, la cantidad de sustancia, el voltaje, etc.
+        Las siguientes magnitudes se denominan magnitudes físicas fundamentales. Si a estas magnitudes se les añaden dos magnitudes complementarias: el ángulo sólido y el ángulo plano, a partir de ellas pueden expresarse TODAS las demás magnitudes físicas.
+        </p>
+        <p>
+          Revisar Tabla 1.1
+        </p>
+      </div>
+      <div class="columna-2">
+        <h2></h2>
+        <p class="concepto">
+              Otras magnitudes que veremos en el curso:
+            <ul class="concepto">
+            <li>Velocidad: Metro por segundo (m/s): es la unidad básica de velocidad en el SI.</li>
+            <li>Aceleración: Metro por segundo al cuadrado (m/s²): es la unidad básica de aceleración en el SI.</li>
+            <li>Fuerza: Newton (N): es la unidad básica de fuerza en el SI. (s)</li>
+            <li>Energía: Julio (J): es la unidad básica de energía en el SI.</li>
+            </ul>
+        </p>
+      </div>
+      <div class="column-3">
+        <p>
+            Recuerda el contenido de la la tabla 1.1:    
+        </p>
+        <img src="https://2.bp.blogspot.com/-Tw9O6j_LPuc/WPj3HZvMlsI/AAAAAAAAARI/DqFi-XBiwl8oAimwwZSoFlHSSqPHf7FQQCLcB/s1600/Sistema%2BSI.PNG" alt=":(" width="100%">
+      </div>
+    </div><!-- div-columnas -->
+
+<h1>¿Qué es metodo del redondeo?</h1>
+  <h3>Definición</h3>
+  <p class="concepto">
+    <strong>El redondeo es la operación o proceso a través del cual se modifica un número o dígito hasta que alcance un valor determinado de acuerdo a una serie de normas. Durante el redondeo podemos optar por aumentar el valor de una cifra, o de reducirlo a otro valor diferente.
+</strong></p>
+
+ <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sawf3TyUjds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+
+ <p class="concepto">
+    <strong>En este vídeo explicaré cómo hacer el redondeo de números decimales. Redondear un número es hacer que este número tenga menos cifras sin modificar el valor del número de forma significativa. Esto se hace para usar números más simples y fáciles de usar, recordar y comunicar. Es más fácil decir que mi nota de un examen ha sido un 9 y no un 8,9543. En conclusión el redondeo es algo que usamos de forma cotidiana para hacernos la vida más fácil.
+</strong></p>
+<p class="concepto">
+  Hay distintos tipos de redondeo con los números decimales:
+<ul class="concepto">
+            <li>Redondeo a la unidad.</li>
+            <li>Redondeo a la décima.</li>
+            <li>Redondea a la centésima.</li>
+            </ul>
+</p>
+
+
+
+
+  <script src="assets/js/script_t1.js"></script>
+
+   <script>
+ function leerTexto() {
+      var texto = document.getElementById("texto").textContent;
+      
+      // Verificar si el navegador admite la síntesis de voz
+      if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+  
+        // Crear un objeto de síntesis de voz
+        var utterance = new SpeechSynthesisUtterance(texto);
+  
+        // Iniciar la síntesis de voz
+        synthesis.speak(utterance);
+      } else {
+        alert("Tu navegador no admite la síntesis de voz.");
+      }
+    }
+  </script>
+
+
+
+
+  <h1><marquee> <font class="d" face="Bradley Hand ITC">Recuerda Participar de la siguiente actividad</font></marquee></h1>
+
+  <center>
+  <a class="btn" href="InicioActividad1.html">Realizar Actividad</a>
+</center>
+</body>
+</html>

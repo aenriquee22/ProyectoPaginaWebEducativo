@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Ley de Gravitación Universal</title>
+  <style>
+    body 
+    {
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 113px;
+    font-size: 35px;
+    font-weight: bold;
+      color: white;
+    }
+
+        .top-bar {
+      width: 100%;
+      height: 2.6cm;
+      background-color: #F39C12;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos para el logo */
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
+    }
+
+    /* Estilos para el título con animación */
+    .title {
+      animation: fade 2s infinite;
+      margin-left: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .image-zoom {
+      transition: transform 0.3s;
+    }
+
+    .image-zoom:hover {
+      transform: scale(1.1);
+    }
+
+    .text {
+      width: 50%;
+      padding: 0 20px;
+      text-align: justify;
+      font-size: 20px;
+      color: white;
+    }
+
+    .text.right {
+      text-align: right;
+       font-size: 30px;
+       font-weight: bold;
+       color: white;
+    }
+
+    .text.left {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+    
+
+     .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+     .btn {
+      display: inline-block;
+      background-color: #F39C12;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #EE0D8B;
+    }
+
+    h1{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+<img src="logo.png" alt="Logo" class="logo">
+<h1 class="title">The Universe Of Physics</h1>
+</div>
+
+<button class="btn" onclick="leerTexto()">EXPLICAR</button>
+
+<br>
+<br>
+<br>
+<br>
+
+    <h1>Ley de Gravitación Universal</h1>
+<div class="container">
+
+    <br>
+    <br>
+    <br>
+
+    <p class="text left" id="texto">
+             El descubrimiento realizado por Isaac Newton de la Ley de la Gravitación Universal: <br>
+             Todos los objetos se atraen unos a otros con una fuerza directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que separa sus centros.
+      <br>
+      <br>
+    </p>
+    <img class="image-zoom" src="assets/images/ley1.png" alt="Imagen 1" width="500">
+</div>
+
+  <div class="container">
+    <img class="image-zoom" src="assets/images/formula.jpg" alt="Imagen 2" width="550">
+    <p class="text right" >
+    La expresión de la ley de gravitación universal se plasma en la expresión de la fuerza gravitatoria o fuerza de la gravedad, ya estudiada en niveles anteriores (puedes pulsar sobre la pestaña Ver también en la parte superior de la página para ampliar información a este respecto). En esta sección vamos a recordarla y a profundizar en ella. <br>
+
+Dos cuerpos se atraen con una fuerza directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que las separa, y está dirigida según la recta que une los cuerpos. Dicha fuerza se conoce como fuerza de la gravedad o fuerza gravitacional y se expresa de la forma:
+  </p>
+
+  <p class="text left" id="texto">
+          donde: <br>
+
+          F : Es el vector fuerza gravitatoria. Su unidad de medida en el Sistema Internacional es el newton (N) <br>
+          G : es la constante de gravitación universal, que no depende de los cuerpos que interaccionan y cuyo valor es G = 6,67·10-11 N·m2/kg2, <br>
+          M y m son las masas de los cuepos que interaccionan. Su unidad de medida en el Sistema Internacional (S.I.) es el kilogramo (kg) <br>
+          r es la distancia que los separa. Es el módulo del vector, que une la masa que genera la fuerza con la masa sobre la que actúa. <br>
+          ur: es un vector unitario que posee la misma dirección de actuación de la fuerza aunque de sentido contrario.
+    </p>
+
+  </div>
+
+    <div class="container">
+    <img class="image-zoom" src="assets/images/ejempo2.png" alt="Imagen 2" width="550">
+    <p class="text right" >
+      <br>
+     Por tanto, la interacción gravitatoria entre dos cuerpos siempre se manifiesta como una pareja de fuerzas iguales en dirección y módulo pero sentido contrario. El caracter atractivo de la fuerza se indica mediante el signo - de la expresión anterior. La siguiente imagen ilustra este concepto. 
+
+      <br>
+      <br>
+    </p>
+  </div>
+
+
+  <center>
+    <p>
+      
+
+La segunda masa (m2) es la responsable de aparezca una fuerza de atracción sobre el primer cuerpo (m1) denominada F2,1
+. Este a su vez también es el responsable de que aparezca una fuerza de atracción denominada  F2,1
+ sobre el cuerpo m1.  
+
+Ambas fuerzas son de igual dirección aunque de sentido contrario. Vectorialmente podemos expresar esto diciendo que:
+<br>
+
+Ur1,2 = -Ur2,1 => F1,2 = -F2,1 <br>
+Hemos estudiado cómo la gravedad actúa sobre una pareja de cuerpos como una pareja de fuerzas
+
+
+    </p>
+
+  </center>
+
+<center>
+  <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1ZeqDflo-SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+</center>
+<center>
+  <a class="btn" href="Tema2Formula.html">CONTINUAR</a>
+</center>
+    <script>
+ function leerTexto() {
+      var texto = document.getElementById("texto").textContent;
+      
+      // Verificar si el navegador admite la síntesis de voz
+      if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+  
+        // Crear un objeto de síntesis de voz
+        var utterance = new SpeechSynthesisUtterance(texto);
+  
+        // Iniciar la síntesis de voz
+        synthesis.speak(utterance);
+      } else {
+        alert("Tu navegador no admite la síntesis de voz.");
+      }
+    }
+  </script>
+</body>
+</html>

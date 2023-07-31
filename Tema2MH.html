@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Lanzamiento Horizontal</title>
+  <style>
+    body 
+    {
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 113px;
+    font-size: 35px;
+    font-weight: bold;
+      color: white;
+    }
+
+        .top-bar {
+      width: 100%;
+      height: 2.6cm;
+      background-color: #F39C12;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos para el logo */
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
+    }
+
+    /* Estilos para el título con animación */
+    .title {
+      animation: fade 2s infinite;
+      margin-left: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .image-zoom {
+      transition: transform 0.3s;
+    }
+
+    .image-zoom:hover {
+      transform: scale(1.1);
+    }
+
+    .text {
+      width: 50%;
+      padding: 0 20px;
+      text-align: justify;
+      font-size: 20px;
+      color: white;
+    }
+
+    .text.right {
+      text-align: right;
+       font-size: 30px;
+       font-weight: bold;
+       color: white;
+    }
+
+    .text.left {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+    
+
+     .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+     .btn {
+      display: inline-block;
+      background-color: #F39C12;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #EE0D8B;
+    }
+
+    h1{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+<img src="logo.png" alt="Logo" class="logo">
+<h1 class="title">The Universe Of Physics</h1>
+</div>
+
+<button class="btn" onclick="leerTexto()">EXPLICAR</button>
+
+<br>
+<br>
+<br>
+<br>
+
+    <h1>LANZAMIENTO HORIZONTAL</h1>
+<div class="container">
+
+    <br>
+    <br>
+    <br>
+
+    <p class="text left" id="texto">
+          El lanzamiento horizontal ocurre cuando un objeto abandona su posición de inicio únicamente con la velocidad inicial en el eje x. En este tipo de lanzamiento, generalmente tendremos un movimiento uniforme en el eje x con velocidad inicial constante y un movimiento acelerado con aceleración a=−g en el eje y.Para resolver problemas de lanzamiento horizontal trabajaremos separando los ejes y resolviendo el problema como si fueran dos objetos separados.
+      <br>
+      <br>
+    </p>
+    <img class="image-zoom" src="assets/images/lh.png" alt="Imagen 1" width="500">
+</div>
+
+  <div class="container">
+    <img class="image-zoom" src="assets/images/lhe1.jpg" alt="Imagen 2" width="550">
+    <p class="text right" >
+      Veamos un ejemplo de cómo separaremos y trabajaremos con tales problemas.
+      <br>
+      1. Un maestro para estimular a sus alumnos tira una pelota que está sobre una mesa de altura h=20 m y les dice que la velocidad con la que la pelota sale de la mesa es horizontal e igual v=10m/s, luego, el maestro pregunta a los estudiantes en cuántos segundos la pelota tocará el suelo y les pide que encuentren el alcance. Datos: g=10m/s2
+
+      <br>
+      <br>
+
+      Bueno, como la pelota sale de la mesa con solamente una velocidad horizontal se trata de un lanzamiento horizontal.
+
+      Como dijimos, para resolver el problema separaremos los movimientos y estudiaremos un eje a la vez, ya que la primera pregunta era el tiempo para tocar el suelo y tenemos todos los datos de movimiento en el eje y.
+
+    </p>
+  </div>
+
+    <div class="container">
+    <img class="image-zoom" src="assets/images/lhe2.jpg" alt="Imagen 2" width="550">
+    <p class="text right" >
+      <br>
+      En el eje y tenemos una caída libre, que es un movimiento acelerado, donde la pelota sale de la posición inicial S0=20, y va hasta el piso S=0, sabemos que en un lanzamiento horizontal la velocidad inicial en el eje y es cero. Y debido a que es una caída libre, el cuerpo está sujeto a la aceleración de la gravedad. Bueno, vimos que tenemos todos los datos para encontrar el tiempo que le toma a la pelota tocar el suelo. Entonces apliquemos la fórmula del movimiento acelerado.
+
+      <br>
+      <br>
+    </p>
+  </div>
+
+
+  <center>
+    <p>
+      Sy =S0 + v0 t + a t2/2 <br>
+      0=20−10 t2/2 <br>
+      t = 2s <br>
+Encontramos el instante en que la pelota toca el suelo, ahora encontremos el alcance. ¿Qué es el alcance? El alcance es qué tan lejos va la pelota en el eje x hasta tocar el piso.
+<br>
+¡Bueno, ya dijimos todo! Estudiemos el movimiento del eje x. Como en el eje x el movimiento es uniforme, es decir, velocidad constante igual a 10m/s.
+Usando la ecuación de movimiento uniforme:<br>
+Sx=S0+v t<br>
+Sx=0+10.2<br>
+Sx=20m<br>
+De acuerdo, se ha encontrado el alcance. Aún podríamos encontrar la velocidad final de la pelota en el eje y. Basta usar la ecuación de la velocidad de movimiento acelerado.
+
+vy=vo+a t<br>
+vy=−10*2<br>
+vy=−20m/s<br>
+
+
+    </p>
+
+  </center>
+
+<center>
+  <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R_gACaTrwjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+</center>
+<center>
+  <a class="btn" href="Tema2Formula.html">CONTINUAR</a>
+</center>
+    <script>
+ function leerTexto() {
+      var texto = document.getElementById("texto").textContent;
+      
+      // Verificar si el navegador admite la síntesis de voz
+      if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+  
+        // Crear un objeto de síntesis de voz
+        var utterance = new SpeechSynthesisUtterance(texto);
+  
+        // Iniciar la síntesis de voz
+        synthesis.speak(utterance);
+      } else {
+        alert("Tu navegador no admite la síntesis de voz.");
+      }
+    }
+  </script>
+</body>
+</html>

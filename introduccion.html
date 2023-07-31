@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Introduccion</title>
+  <style>
+    body 
+    {
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 113px;
+    }
+
+        .top-bar {
+      width: 100%;
+      height: 2.6cm;
+      background-color: #F39C12;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos para el logo */
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
+    }
+
+    /* Estilos para el título con animación */
+    .title {
+      animation: fade 2s infinite;
+      margin-left: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .image-zoom {
+      transition: transform 0.3s;
+    }
+
+    .image-zoom:hover {
+      transform: scale(1.1);
+    }
+
+    .text {
+      width: 50%;
+      padding: 0 20px;
+      text-align: justify;
+      font-size: 20px;
+      color: white;
+    }
+
+    .text.right {
+      text-align: right;
+       font-size: 30px;
+       font-weight: bold;
+       color: white;
+    }
+
+    .text.left {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+    
+
+     .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+     .btn {
+      display: inline-block;
+      background-color: #F39C12;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #EE0D8B;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+<img src="logo.png" alt="Logo" class="logo">
+<h1 class="title">The Universe Of Physics</h1>
+</div>
+
+<button class="btn" onclick="leerTexto()">EXPLICAR</button>
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+
+    <h1>INTRODUCCIÓN</h1>
+    <br>
+    <br>
+    <br>
+
+    <p class="text left" id="texto">
+           La palabra Física proviene del vocablo griego Physis, cuyo significado es Naturaleza. La Física es una ciencia que estudía la naturaleza. Es la ciencia que sirve de base para comprender el comportamiento de los fenómenos naturales que se desarrollan en el espacio tiempo. Se ocupa de estudiar las propiedades de la materia, la energía, el tiempo, el espacio y sus interacciones (fuerzas). Mediante la observación de la naturaleza, está ciencia trata de descubrir las leyes que rigen la materia y la energía en cualquiera de su formas y utiliza el método científico para formular y comprobar sus hipótesis.
+    </p>
+    <img class="image-zoom" src="assets/images/imagen1.jpg" alt="Imagen 1" width="500">
+</div>
+
+  <div class="container">
+    <img class="image-zoom" src="assets/images/imagen2.png" alt="Imagen 2" width="550">
+    <p class="text right" >
+      La Física es una ciencia cuantitativa. La descripción de los fenómenos y el establecimiento de leyes requieren de la medición de las propiedades físicas involucradas. La medición es la técnica por medio de la cual asignamos un número a una magnitud física, como resultado de una comparación de dicha magnitud con otra similar tomada como patrón (unidad de medida).
+    </p>
+  </div>
+
+<center>
+  <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gbR6rcG1D-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+</center>
+<center>
+  <a class="btn" href="UnidadesDeMedida.html">CONTINUAR REPASO</a>
+</center>
+    <script>
+ function leerTexto() {
+      var texto = document.getElementById("texto").textContent;
+      
+      // Verificar si el navegador admite la síntesis de voz
+      if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+  
+        // Crear un objeto de síntesis de voz
+        var utterance = new SpeechSynthesisUtterance(texto);
+  
+        // Iniciar la síntesis de voz
+        synthesis.speak(utterance);
+      } else {
+        alert("Tu navegador no admite la síntesis de voz.");
+      }
+    }
+  </script>
+</body>
+</html>

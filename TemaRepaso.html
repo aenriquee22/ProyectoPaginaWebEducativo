@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Introduccion</title>
+  <style>
+    body {
+     /*background-image: url('assets/images/bg4.jpg');*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 20px 113px;
+    }
+
+        .top-bar {
+      width: 100%;
+      height: 2.6cm;
+      background-color: #F39C12;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos para el logo */
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
+    }
+
+    /* Estilos para el título con animación */
+    .title {
+      animation: fade 2s infinite;
+      margin-left: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .image-zoom {
+      transition: transform 0.3s;
+    }
+
+    .image-zoom:hover {
+      transform: scale(1.1);
+    }
+
+    .text {
+      width: 50%;
+      padding: 0 20px;
+      text-align: justify;
+      font-size: 20px;
+    }
+
+    .text.right {
+      text-align: right;
+    }
+
+    .text.left {
+      text-align: left;
+    }
+
+     .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1 class="title">The Universe Of Physics</h1>
+  </div>
+
+   <button onclick="leerTexto()">Explicar</button>
+
+<br>
+<br>
+<br>
+<br>
+  <div class="container">
+
+    <h1>INTRODUCCIÓN</h1>
+    <br>
+    <br>
+    <br>
+
+    <p class="text left" id="texto">
+           La palabra Física proviene del vocablo griego Physis, cuyo significado es Naturaleza. La Física es una ciencia que estudía la naturaleza. Es la ciencia que sirve de base para comprender el comportamiento de los fenómenos naturales que se desarrollan en el espacio tiempo. Se ocupa de estudiar las propiedades de la materia, la energía, el tiempo, el espacio y sus interacciones (fuerzas). Mediante la observación de la naturaleza, está ciencia trata de descubrir las leyes que rigen la materia y la energía en cualquiera de su formas y utiliza el método científico para formular y comprobar sus hipótesis.
+    </p>
+    <img class="image-zoom" src="assets/images/imagen1.jpg" alt="Imagen 1" width="500">
+  </div>
+
+  <div class="container">
+    <img class="image-zoom" src="assets/images/imagen2.png" alt="Imagen 2" width="550">
+    <p class="text right" >
+      La Física es una ciencia cuantitativa. La descripción de los fenómenos y el establecimiento de leyes requieren de la medición de las propiedades físicas involucradas. La medición es la técnica por medio de la cual asignamos un número a una magnitud física, como resultado de una comparación de dicha magnitud con otra similar tomada como patrón (unidad de medida).
+    </p>
+  </div>
+
+
+  <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gbR6rcG1D-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+
+    <script>
+ function leerTexto() {
+      var texto = document.getElementById("texto").textContent;
+      
+      // Verificar si el navegador admite la síntesis de voz
+      if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+  
+        // Crear un objeto de síntesis de voz
+        var utterance = new SpeechSynthesisUtterance(texto);
+  
+        // Iniciar la síntesis de voz
+        synthesis.speak(utterance);
+      } else {
+        alert("Tu navegador no admite la síntesis de voz.");
+      }
+    }
+  </script>
+</body>
+</html>
